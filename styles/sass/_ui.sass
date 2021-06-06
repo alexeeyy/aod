@@ -1,0 +1,54 @@
+//==================================================================================================
+.ibg
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+
+
+.ibg img
+  width: 0
+  height: 0
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 0
+  visibility: hidden
+//==================================================================================================
+.slick-slider
+  position: relative
+  // .slick-track,.slick-list
+  .slick-list
+    overflow: hidden
+  .slick-track
+    display: flex
+    align-items: flex-start
+  // .slick-slide
+  .slick-dots
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 80px 0 0
+    margin: 0
+    @media (max-width:1100px)
+      padding: 50px 0px 0px 0px
+    @media (max-width:767px)
+      padding: 30px 0px 0px 0px
+    li
+      list-style: none
+      margin: 0 5px
+      button
+        padding: 0
+        font-size: 0
+        width: 11px
+        height: 11px
+        border-radius: 50%
+        border: 1px solid #a9afb3
+        background-color: #a9afb3
+        outline: none
+      &.slick-active
+        button
+          background-color: transparent
+          border: 1px solid #a9afb3
+
+//=====================================================================================================================
